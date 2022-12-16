@@ -1,0 +1,82 @@
+// custom variables
+$fuschia: #d61c5b;
+$violet: #a02088;
+$orange: #f9763d;
+$purple: #5b1499;
+$dark-purple: #270f42;
+$yellow: #f6eb12;
+
+// bootstrap variables
+$dark: $dark-purple;
+$font-family-base: canada-type-gibson, sans-serif;
+$navbar-dark-hover-color: $orange;
+$display4-weight: 700;
+
+// imports bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// custom styles
+.back-to-mp {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    color: $navbar-dark-color;
+    font-weight: 400;
+}
+
+.back-to-mp:hover {
+    text-decoration: none;
+    color: $navbar-dark-hover-color;
+}
+
+.back-to-mp::before {
+    content: "\1F878";
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+
+    a {
+        position: relative;
+    }
+
+    a img {
+        width: 100%;
+        position: relative;
+        top: -10px;
+    }
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.jumbotron {
+    background: linear-gradient(136deg, #5b1499, #d61c5b, #f9763d);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 7s ease infinite;
+    -moz-animation: gradient 7s ease infinite;
+    animation: gradient 7s ease infinite;
+    min-height: 50vh;
+    border-radius: 0;
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@keyframes gradient {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
