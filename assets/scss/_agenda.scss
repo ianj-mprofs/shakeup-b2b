@@ -1,0 +1,43 @@
+#agendaTab {
+    .nav-link {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: $color-black;
+
+        &:hover {
+            font-weight: 700;
+            color: $color-fuschia;
+            border: 0;
+        }
+    }
+
+    .nav-link.active {
+        font-weight: 700;
+        color: $color-fuschia;
+        background-color: transparent !important;
+        border: 0;
+        border-bottom: 2px solid $color-fuschia;
+        position: relative;
+    }
+
+    .nav-link.active::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        border: 11px solid transparent;
+        border-bottom-color: $color-fuschia;
+        transform: rotate(180deg);
+    }
+}
+
+.accordion-header .time {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $color-fuschia;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: $color-white;
+    box-shadow: none;
+}

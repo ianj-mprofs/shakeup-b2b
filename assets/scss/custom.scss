@@ -1,68 +1,92 @@
-// custom variables
-$fuschia: #d61c5b;
-$violet: #a02088;
-$orange: #f9763d;
-$purple: #5b1499;
-$dark-purple: #270f42;
-$yellow: #f6eb12;
+@mixin flex ($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
 
-// bootstrap variables
-$dark: $dark-purple;
-$font-family-base: canada-type-gibson, sans-serif;
-$navbar-dark-hover-color: $orange;
-$display4-weight: 700;
+@import './variables';
+@import './header';
+@import './buttons';
+@import './agenda';
+// @import './footer';
 
-// imports bootstrap
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
-// custom styles
-.back-to-mp {
-    position: absolute;
-    top: 0;
-    left: 50px;
-    color: $navbar-dark-color;
+html {
+    font-size: 16px;
+    font-family: $font-family;
     font-weight: 400;
 }
 
-.back-to-mp:hover {
-    text-decoration: none;
-    color: $navbar-dark-hover-color;
+.display-1, .display-2, .display-3, .display-4, .display-5 {
+    font-family: $font-family;
+    font-weight: 900;
 }
 
-.back-to-mp::before {
-    content: "\1F878";
-    position: relative;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo-container {
-    position: absolute;
-    top: 20px;
-    width: 200px;
-    height: 200px;
-
-    a {
-        position: relative;
-    }
-
-    a img {
-        width: 100%;
-        position: relative;
-        top: -10px;
-    }
+body {
+    background-color: $color-off-white;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.nav-link {
-    font-weight: 500;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6  {
+    font-weight: 900;
 }
 
-.jumbotron {
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6  {
+    text-transform: uppercase;
+}
+
+.bg-dark-purple {
+    background-color: $color-dark-purple;
+}
+
+.bg-purple {
+    background-color: $color-purple;
+}
+
+.text-dark-purple {
+    color: $color-dark-purple;
+}
+
+.text-purple {
+    color: $color-purple;
+}
+
+.bg-off-white {
+    background-color: $color-off-white;
+}
+
+.text-small {
+    font-size: 0.75rem;
+}
+
+.drop-shadow {
+    box-shadow: .85rem .9rem 0 1px $color-dark-purple;
+}
+
+input:focus {
+    border-color: $color-purple;
+}
+
+.page-wrapper {
+    @include flex(space-between, center, column);
+    height: 100%;
+    width: 100%;
+}
+
+.hero {
+    min-height: 60vh;
     background: linear-gradient(136deg, #5b1499, #d61c5b, #f9763d);
-    background-size: 400% 400%;
+    background-size: 200% 200%;
     -webkit-animation: gradient 7s ease infinite;
     -moz-animation: gradient 7s ease infinite;
     animation: gradient 7s ease infinite;
-    min-height: 50vh;
-    border-radius: 0;
 }
 
 @-webkit-keyframes gradient {
@@ -79,4 +103,96 @@ $display4-weight: 700;
     0%{background-position:93% 0%}
     50%{background-position:0% 100%}
     100%{background-position:93% 0%}
+}
+
+.activities {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .activities-img {
+        width: 100%;
+        min-height: 650px;
+    }
+
+    .activities-text-overlay {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+#activities .row div:nth-of-type(1) {
+    .activities-img {
+        background: linear-gradient(90deg, rgba(91, 20, 153, 0.8), rgba(91, 20, 153, 0.8)), url(../images/speakers-900x600.jpg);
+        background-size: cover;
+        background-position: 80% 50%;
+
+    }
+
+    &:hover {
+        .activities-img {
+            background: url(../images/speakers-900x600.jpg);
+            background-size: cover;
+            background-position: 80% 50%;
+        }
+
+        .activities-text-overlay {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+    }
+}
+
+
+#activities .row div:nth-of-type(2) {
+    .activities-img {
+        background: linear-gradient(90deg, rgba(214, 28, 91, 0.8), rgba(214, 28, 91, 0.8)), url(../images/workshops-900x600.jpg);
+        background-size: cover;
+        background-position: 70% 50%;
+    }
+
+    &:hover {
+        .activities-img {
+            background: url(../images/workshops-900x600.jpg);
+            background-size: cover;
+            background-position: 70% 50%;
+        }
+
+        .activities-text-overlay {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+    }
+}
+
+#activities .row div:nth-of-type(3) {
+    .activities-img {
+        background: linear-gradient(90deg, rgb(249, 118, 61, 0.8), rgb(249, 118, 61, 0.8)), url(../images/roundtables-900x600.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    &:hover {
+        .activities-img {
+            background: url(../images/roundtables-900x600.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        .activities-text-overlay {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
 }
