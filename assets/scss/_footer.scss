@@ -1,12 +1,8 @@
-footer {
-    @include flex(flex-end, center, column);
-    width: 100%;
-    background-color: $color-dark-purple;
-}
+footer nav a {
+    color: $color-white;
+    text-decoration: none;
 
-.footer-nav {
-    @include flex(space-between, center, row);
-    width: 100%;
-    background-color: $color-violet;
-    border-radius: 5% 5% 0 0;
+    &:hover {
+        color: $color-slate-grey;
+    }
 }
