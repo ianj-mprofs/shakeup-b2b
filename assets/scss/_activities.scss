@@ -1,0 +1,151 @@
+.activities {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .activities-img {
+        width: 100%;
+        min-height: 650px;
+    }
+
+    .activities-text-overlay {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+#activities .row div:nth-of-type(1) {
+    .activities-img {
+        background: linear-gradient(90deg, rgba(91, 20, 153, 0.8), rgba(91, 20, 153, 0.8)), url(../images/speakers-900x600.jpg);
+        background-size: cover;
+        background-position: 80% 50%;
+
+    }
+
+    &:hover {
+        .activities-img {
+            background: url(../images/speakers-900x600.jpg);
+            background-size: cover;
+            background-position: 80% 50%;
+        }
+
+        .activities-text-overlay {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+    }
+}
+
+
+#activities .row div:nth-of-type(2) {
+    .activities-img {
+        background: linear-gradient(90deg, rgba(214, 28, 91, 0.8), rgba(214, 28, 91, 0.8)), url(../images/workshops-900x600.jpg);
+        background-size: cover;
+        background-position: 70% 50%;
+    }
+
+    &:hover {
+        .activities-img {
+            background: url(../images/workshops-900x600.jpg);
+            background-size: cover;
+            background-position: 70% 50%;
+        }
+
+        .activities-text-overlay {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+    }
+}
+
+#activities .row div:nth-of-type(3) {
+    .activities-img {
+        background: linear-gradient(90deg, rgb(249, 118, 61, 0.8), rgb(249, 118, 61, 0.8)), url(../images/roundtables-900x600.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    &:hover {
+        .activities-img {
+            background: url(../images/roundtables-900x600.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        .activities-text-overlay {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+
+    .activities {
+        .activities-img {
+            min-height: 425px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 45vh;
+    }
+
+    .activities {
+        .activities-img {
+            min-height: 200px;
+        }
+    }
+
+    #activities .row div:nth-of-type(1) {
+        .activities-img {
+            background-position: 80% 25%;
+        }
+    
+        &:hover {
+            .activities-img {
+                background-position: 80% 25%;
+            }
+        }
+    }
+    
+    
+    #activities .row div:nth-of-type(2) {
+        .activities-img {
+            background-position: 70% 30%;
+        }
+    
+        &:hover {
+            .activities-img {
+                background-position: 70% 30%;
+            }
+        }
+    }
+    
+    #activities .row div:nth-of-type(3) {
+        .activities-img {
+            background-position: 50% 10%;
+        }
+    
+        &:hover {
+            .activities-img {
+                background-position: 50% 10%;
+            }
+        }
+    }
+}

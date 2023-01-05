@@ -1,3 +1,7 @@
+header nav {
+    background-color: rgba(39, 15, 66, 0.9);
+}
+
 .nav-item {
     font-weight: 700;
 }
@@ -5,11 +9,6 @@
 .back-to-mp {
     text-decoration: none;
     color: $color-white;
-
-    // &::before {
-    //     content: "\1F878";
-    //     margin-right: 0.25rem;
-    // }
 
     &:hover {
         color: $color-slate-grey;

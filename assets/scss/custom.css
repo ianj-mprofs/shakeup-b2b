@@ -1,3 +1,7 @@
+header nav {
+  background-color: rgba(39, 15, 66, 0.9);
+}
+
 .nav-item {
   font-weight: 700;
 }
@@ -8,157 +12,6 @@
 }
 .back-to-mp:hover {
   color: #afadb2;
-}
-
-.btn {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.btn-primary {
-  background-color: #f6eb12;
-  border-color: #f6eb12;
-  color: #270f42;
-}
-.btn-primary:hover {
-  background-color: #f9763d;
-  border-color: #f9763d;
-  color: #ffffff;
-}
-
-.btn-secondary {
-  background-color: #270f42;
-  border-color: #270f42;
-  color: #ffffff;
-}
-
-.btn-outline-secondary {
-  border-color: #270f42;
-  color: #270f42;
-}
-.btn-outline-secondary:hover {
-  background-color: #270f42;
-  border-color: #270f42;
-  color: #ffffff;
-}
-
-#agendaTab .nav-link {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #000000;
-}
-#agendaTab .nav-link:hover {
-  font-weight: 700;
-  color: #d61c5b;
-  border: 0;
-}
-#agendaTab .nav-link.active {
-  font-weight: 700;
-  color: #d61c5b;
-  background-color: transparent !important;
-  border: 0;
-  border-bottom: 2px solid #d61c5b;
-  position: relative;
-}
-#agendaTab .nav-link.active::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  border: 11px solid transparent;
-  border-bottom-color: #d61c5b;
-  transform: rotate(180deg);
-}
-
-.accordion-header .time {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #d61c5b;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: #ffffff;
-  box-shadow: none;
-}
-
-footer nav a {
-  color: #ffffff;
-  text-decoration: none;
-}
-footer nav a:hover {
-  color: #afadb2;
-}
-
-html {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", sans-serif !important;
-  background-color: #fdf0f0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 900;
-}
-
-h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
-  text-transform: uppercase;
-}
-
-.display-1, .display-2, .display-3, .display-4, .display-5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-}
-
-.bg-dark-purple {
-  background-color: #270f42;
-}
-
-.bg-purple {
-  background-color: #5b1499;
-}
-
-.text-dark-purple {
-  color: #270f42;
-}
-
-.text-purple {
-  color: #5b1499;
-}
-
-.bg-off-white {
-  background-color: #fdf0f0;
-}
-
-.text-small {
-  font-size: 0.75rem;
-}
-
-.drop-shadow {
-  box-shadow: 0.85rem 0.9rem 0 1px #270f42;
-}
-
-input:focus {
-  border-color: #5b1499;
-}
-
-.page-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
 }
 
 .hero {
@@ -189,6 +42,11 @@ input:focus {
   }
   100% {
     background-position: 93% 0%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    min-height: 45vh;
   }
 }
 .activities {
@@ -289,5 +147,179 @@ input:focus {
   }
   #activities .row div:nth-of-type(3):hover .activities-img {
     background-position: 50% 10%;
+  }
+}
+#agendaTab .nav-link {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #000000;
+}
+#agendaTab .nav-link:hover {
+  font-weight: 700;
+  color: #d61c5b;
+  border: 0;
+}
+#agendaTab .nav-link.active {
+  font-weight: 700;
+  color: #d61c5b;
+  background-color: transparent !important;
+  border: 0;
+  border-bottom: 2px solid #d61c5b;
+  position: relative;
+}
+#agendaTab .nav-link.active::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: 11px solid transparent;
+  border-bottom-color: #d61c5b;
+  transform: rotate(180deg);
+}
+
+.accordion-header .time {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #d61c5b;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+footer nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer nav a:hover {
+  color: #afadb2;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #f6eb12;
+  border-color: #f6eb12;
+  color: #270f42;
+}
+.btn-primary:hover {
+  background-color: #f9763d;
+  border-color: #f9763d;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #270f42;
+  border-color: #270f42;
+  color: #ffffff;
+}
+
+.btn-outline-secondary {
+  border-color: #270f42;
+  color: #270f42;
+}
+.btn-outline-secondary:hover {
+  background-color: #270f42;
+  border-color: #270f42;
+  color: #ffffff;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #fdf0f0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 900;
+}
+
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
+  text-transform: uppercase;
+}
+
+.display-1, .display-2, .display-3, .display-4, .display-5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.bg-dark-purple {
+  background-color: #270f42;
+}
+
+.bg-purple {
+  background-color: #5b1499;
+}
+
+.text-dark-purple {
+  color: #270f42;
+}
+
+.text-purple {
+  color: #5b1499;
+}
+
+.bg-off-white {
+  background-color: #fdf0f0;
+}
+
+.text-small {
+  font-size: 0.75rem;
+}
+
+.drop-shadow {
+  box-shadow: 0.85rem 0.9rem 0 1px #270f42;
+}
+
+input:focus {
+  border-color: #5b1499;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.handle {
+  color: #afadb2;
+  text-decoration: none;
+}
+.handle:hover {
+  color: #d61c5b;
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=custom.css.map */
