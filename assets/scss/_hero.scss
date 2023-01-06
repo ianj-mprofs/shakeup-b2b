@@ -1,5 +1,4 @@
-.hero {
-    min-height: 60vh;
+@mixin hero {
     background: linear-gradient(136deg, #5b1499, #d61c5b, #f9763d);
     background-size: 200% 200%;
     -webkit-animation: gradient 7s ease infinite;
@@ -23,8 +22,22 @@
     100%{background-position:93% 0%}
 }
 
+.big-hero {
+    @include hero;
+    min-height: 60vh;
+}
+
+.small-hero {
+    @include hero;
+    min-height: 30vh;
+}
+
 @media only screen and (max-width: 768px) {
-    .hero {
+    .big-hero {
         min-height: 45vh;
+    }
+
+    .small-hero {
+        min-height: 25vh;
     }
 }

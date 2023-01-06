@@ -22,14 +22,6 @@
   background-color: #f6eb12;
 }
 
-.hero {
-  min-height: 60vh;
-  background: linear-gradient(136deg, #5b1499, #d61c5b, #f9763d);
-  background-size: 200% 200%;
-  -webkit-animation: gradient 7s ease infinite;
-  animation: gradient 7s ease infinite;
-}
-
 @-webkit-keyframes gradient {
   0% {
     background-position: 93% 0%;
@@ -52,9 +44,28 @@
     background-position: 93% 0%;
   }
 }
+.big-hero {
+  background: linear-gradient(136deg, #5b1499, #d61c5b, #f9763d);
+  background-size: 200% 200%;
+  -webkit-animation: gradient 7s ease infinite;
+  animation: gradient 7s ease infinite;
+  min-height: 60vh;
+}
+
+.small-hero {
+  background: linear-gradient(136deg, #5b1499, #d61c5b, #f9763d);
+  background-size: 200% 200%;
+  -webkit-animation: gradient 7s ease infinite;
+  animation: gradient 7s ease infinite;
+  min-height: 30vh;
+}
+
 @media only screen and (max-width: 768px) {
-  .hero {
+  .big-hero {
     min-height: 45vh;
+  }
+  .small-hero {
+    min-height: 25vh;
   }
 }
 .activities {
@@ -236,6 +247,11 @@ footer nav a:hover {
   color: #ffffff;
 }
 
+#terms-conditions {
+  position: relative;
+  top: -5vh;
+}
+
 html {
   font-size: 16px;
   font-weight: 400;
@@ -260,6 +276,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
   text-transform: uppercase;
+}
+
+ul {
+  list-style-type: square;
 }
 
 .display-1, .display-2, .display-3, .display-4, .display-5 {

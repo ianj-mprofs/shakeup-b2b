@@ -12,6 +12,7 @@
 @import './agenda';
 @import './footer';
 @import './buttons';
+@import './ts';
 
 html {
     font-size: 16px;
@@ -37,6 +38,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6  {
 
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6  {
     text-transform: uppercase;
+}
+
+ul {
+    list-style-type: square;
 }
 
 .display-1, .display-2, .display-3, .display-4, .display-5 {
