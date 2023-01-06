@@ -1,7 +1,3 @@
-header nav {
-  background-color: rgba(39, 15, 66, 0.9);
-}
-
 .nav-item {
   font-weight: 700;
 }
@@ -12,6 +8,18 @@ header nav {
 }
 .back-to-mp:hover {
   color: #afadb2;
+}
+
+.dropdown-menu {
+  background-color: #270f42;
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+.dropdown-item:hover {
+  color: #270f42;
+  background-color: #f6eb12;
 }
 
 .hero {
