@@ -89,12 +89,12 @@
   background-size: cover;
   background-position: 80% 50%;
 }
-#activities .row div:nth-of-type(1):hover .activities-img {
+#activities .row div:nth-of-type(1):hover .activities-img, #activities .row div:nth-of-type(1):active .activities-img {
   background: url(../images/speakers-900x600.jpg);
   background-size: cover;
   background-position: 80% 50%;
 }
-#activities .row div:nth-of-type(1):hover .activities-text-overlay {
+#activities .row div:nth-of-type(1):hover .activities-text-overlay, #activities .row div:nth-of-type(1):active .activities-text-overlay {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -103,12 +103,12 @@
   background-size: cover;
   background-position: 70% 50%;
 }
-#activities .row div:nth-of-type(2):hover .activities-img {
+#activities .row div:nth-of-type(2):hover .activities-img, #activities .row div:nth-of-type(2):active .activities-img {
   background: url(../images/workshops-900x600.jpg);
   background-size: cover;
   background-position: 70% 50%;
 }
-#activities .row div:nth-of-type(2):hover .activities-text-overlay {
+#activities .row div:nth-of-type(2):hover .activities-text-overlay, #activities .row div:nth-of-type(2):active .activities-text-overlay {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -117,12 +117,12 @@
   background-size: cover;
   background-position: 50% 50%;
 }
-#activities .row div:nth-of-type(3):hover .activities-img {
+#activities .row div:nth-of-type(3):hover .activities-img, #activities .row div:nth-of-type(3):active .activities-img {
   background: url(../images/roundtables-900x600.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
-#activities .row div:nth-of-type(3):hover .activities-text-overlay {
+#activities .row div:nth-of-type(3):hover .activities-text-overlay, #activities .row div:nth-of-type(3):active .activities-text-overlay {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
 

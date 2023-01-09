@@ -24,7 +24,7 @@
 
     }
 
-    &:hover {
+    &:hover, &:active {
         .activities-img {
             background: url(../images/speakers-900x600.jpg);
             background-size: cover;
@@ -45,7 +45,7 @@
         background-position: 70% 50%;
     }
 
-    &:hover {
+    &:hover, &:active {
         .activities-img {
             background: url(../images/workshops-900x600.jpg);
             background-size: cover;
@@ -65,7 +65,7 @@
         background-position: 50% 50%;
     }
 
-    &:hover {
+    &:hover, &:active {
         .activities-img {
             background: url(../images/roundtables-900x600.jpg);
             background-size: cover;
