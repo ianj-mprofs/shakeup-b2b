@@ -2,6 +2,13 @@
   font-weight: 700;
 }
 
+.nav-link {
+  color: #ffffff;
+}
+.nav-link:hover {
+  color: #f6eb12;
+}
+
 .back-to-mp {
   text-decoration: none;
   color: #ffffff;
@@ -68,61 +75,64 @@
     min-height: 25vh;
   }
 }
-.activities {
+.activity {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-.activities .activities-img {
+.activity .activity-img {
   width: 100%;
   min-height: 650px;
 }
-.activities .activities-text-overlay {
+.activity .activity-text-overlay {
   position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
 }
 
-#activities .row div:nth-of-type(1) .activities-img {
+#activities .row div:nth-of-type(1) .activity-img {
   background: linear-gradient(90deg, rgba(91, 20, 153, 0.8), rgba(91, 20, 153, 0.8)), url(../images/speakers-900x600.jpg);
   background-size: cover;
   background-position: 80% 50%;
 }
-#activities .row div:nth-of-type(1):hover .activities-img, #activities .row div:nth-of-type(1):active .activities-img {
+#activities .row div:nth-of-type(1):hover .activity-img, #activities .row div:nth-of-type(1):active .activity-img {
   background: url(../images/speakers-900x600.jpg);
   background-size: cover;
   background-position: 80% 50%;
 }
-#activities .row div:nth-of-type(1):hover .activities-text-overlay, #activities .row div:nth-of-type(1):active .activities-text-overlay {
+#activities .row div:nth-of-type(1):hover .activity-text-overlay, #activities .row div:nth-of-type(1):active .activity-text-overlay {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
+#activities .row div:nth-of-type(1):hover .activity-text-overlay h3, #activities .row div:nth-of-type(1):active .activity-text-overlay h3 {
+  content: "Coming Soon!";
+}
 
-#activities .row div:nth-of-type(2) .activities-img {
+#activities .row div:nth-of-type(2) .activity-img {
   background: linear-gradient(90deg, rgba(214, 28, 91, 0.8), rgba(214, 28, 91, 0.8)), url(../images/workshops-900x600.jpg);
   background-size: cover;
   background-position: 70% 50%;
 }
-#activities .row div:nth-of-type(2):hover .activities-img, #activities .row div:nth-of-type(2):active .activities-img {
+#activities .row div:nth-of-type(2):hover .activity-img, #activities .row div:nth-of-type(2):active .activity-img {
   background: url(../images/workshops-900x600.jpg);
   background-size: cover;
   background-position: 70% 50%;
 }
-#activities .row div:nth-of-type(2):hover .activities-text-overlay, #activities .row div:nth-of-type(2):active .activities-text-overlay {
+#activities .row div:nth-of-type(2):hover .activity-text-overlay, #activities .row div:nth-of-type(2):active .activity-text-overlay {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-#activities .row div:nth-of-type(3) .activities-img {
+#activities .row div:nth-of-type(3) .activity-img {
   background: linear-gradient(90deg, rgba(249, 118, 61, 0.8), rgba(249, 118, 61, 0.8)), url(../images/roundtables-900x600.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
-#activities .row div:nth-of-type(3):hover .activities-img, #activities .row div:nth-of-type(3):active .activities-img {
+#activities .row div:nth-of-type(3):hover .activity-img, #activities .row div:nth-of-type(3):active .activity-img {
   background: url(../images/roundtables-900x600.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
-#activities .row div:nth-of-type(3):hover .activities-text-overlay, #activities .row div:nth-of-type(3):active .activities-text-overlay {
+#activities .row div:nth-of-type(3):hover .activity-text-overlay, #activities .row div:nth-of-type(3):active .activity-text-overlay {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -135,7 +145,7 @@
   html {
     font-size: 15px;
   }
-  .activities .activities-img {
+  .activity .activity-img {
     min-height: 425px;
   }
 }
@@ -146,25 +156,25 @@
   .hero {
     min-height: 45vh;
   }
-  .activities .activities-img {
+  .activity .activity-img {
     min-height: 200px;
   }
-  #activities .row div:nth-of-type(1) .activities-img {
+  #activities .row div:nth-of-type(1) .activity-img {
     background-position: 80% 25%;
   }
-  #activities .row div:nth-of-type(1):hover .activities-img {
+  #activities .row div:nth-of-type(1):hover .activity-img {
     background-position: 80% 25%;
   }
-  #activities .row div:nth-of-type(2) .activities-img {
+  #activities .row div:nth-of-type(2) .activity-img {
     background-position: 70% 30%;
   }
-  #activities .row div:nth-of-type(2):hover .activities-img {
+  #activities .row div:nth-of-type(2):hover .activity-img {
     background-position: 70% 30%;
   }
-  #activities .row div:nth-of-type(3) .activities-img {
+  #activities .row div:nth-of-type(3) .activity-img {
     background-position: 50% 10%;
   }
-  #activities .row div:nth-of-type(3):hover .activities-img {
+  #activities .row div:nth-of-type(3):hover .activity-img {
     background-position: 50% 10%;
   }
 }
@@ -190,7 +200,7 @@
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 40%;
   border: 11px solid transparent;
   border-bottom-color: #d61c5b;
   transform: rotate(180deg);
@@ -360,6 +370,14 @@ input:focus {
   text-decoration: none;
 }
 .handle:hover {
+  color: #d61c5b;
+}
+
+a.card-text {
+  color: #ffffff;
+  text-decoration: none;
+}
+a.card-text:hover {
   color: #d61c5b;
 }
 

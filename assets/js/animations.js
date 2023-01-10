@@ -25,5 +25,3 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 });
-
-console.log("hello");

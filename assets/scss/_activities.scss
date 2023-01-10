@@ -1,14 +1,14 @@
-.activities {
+.activity {
     width: 100%;
     overflow: hidden;
     position: relative;
 
-    .activities-img {
+    .activity-img {
         width: 100%;
         min-height: 650px;
     }
 
-    .activities-text-overlay {
+    .activity-text-overlay {
         position: absolute;
         width: 100%;
         left: 0;
@@ -17,7 +17,7 @@
 }
 
 #activities .row div:nth-of-type(1) {
-    .activities-img {
+    .activity-img {
         background: linear-gradient(90deg, rgba(91, 20, 153, 0.8), rgba(91, 20, 153, 0.8)), url(../images/speakers-900x600.jpg);
         background-size: cover;
         background-position: 80% 50%;
@@ -25,54 +25,58 @@
     }
 
     &:hover, &:active {
-        .activities-img {
+        .activity-img {
             background: url(../images/speakers-900x600.jpg);
             background-size: cover;
             background-position: 80% 50%;
         }
 
-        .activities-text-overlay {
+        .activity-text-overlay {
             background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        .activity-text-overlay h3 {
+            content: "Coming Soon!"
         }
     }
 }
 
 
 #activities .row div:nth-of-type(2) {
-    .activities-img {
+    .activity-img {
         background: linear-gradient(90deg, rgba(214, 28, 91, 0.8), rgba(214, 28, 91, 0.8)), url(../images/workshops-900x600.jpg);
         background-size: cover;
         background-position: 70% 50%;
     }
 
     &:hover, &:active {
-        .activities-img {
+        .activity-img {
             background: url(../images/workshops-900x600.jpg);
             background-size: cover;
             background-position: 70% 50%;
         }
 
-        .activities-text-overlay {
+        .activity-text-overlay {
             background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
         }
     }
 }
 
 #activities .row div:nth-of-type(3) {
-    .activities-img {
+    .activity-img {
         background: linear-gradient(90deg, rgb(249, 118, 61, 0.8), rgb(249, 118, 61, 0.8)), url(../images/roundtables-900x600.jpg);
         background-size: cover;
         background-position: 50% 50%;
     }
 
     &:hover, &:active {
-        .activities-img {
+        .activity-img {
             background: url(../images/roundtables-900x600.jpg);
             background-size: cover;
             background-position: 50% 50%;
         }
 
-        .activities-text-overlay {
+        .activity-text-overlay {
             background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
         }
     }
@@ -90,8 +94,8 @@
         font-size: 15px;
     }
 
-    .activities {
-        .activities-img {
+    .activity {
+        .activity-img {
             min-height: 425px;
         }
     }
@@ -106,19 +110,19 @@
         min-height: 45vh;
     }
 
-    .activities {
-        .activities-img {
+    .activity {
+        .activity-img {
             min-height: 200px;
         }
     }
 
     #activities .row div:nth-of-type(1) {
-        .activities-img {
+        .activity-img {
             background-position: 80% 25%;
         }
     
         &:hover {
-            .activities-img {
+            .activity-img {
                 background-position: 80% 25%;
             }
         }
@@ -126,24 +130,24 @@
     
     
     #activities .row div:nth-of-type(2) {
-        .activities-img {
+        .activity-img {
             background-position: 70% 30%;
         }
     
         &:hover {
-            .activities-img {
+            .activity-img {
                 background-position: 70% 30%;
             }
         }
     }
     
     #activities .row div:nth-of-type(3) {
-        .activities-img {
+        .activity-img {
             background-position: 50% 10%;
         }
     
         &:hover {
-            .activities-img {
+            .activity-img {
                 background-position: 50% 10%;
             }
         }

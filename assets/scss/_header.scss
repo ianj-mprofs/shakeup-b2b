@@ -1,5 +1,14 @@
 .nav-item {
     font-weight: 700;
+    
+}
+
+.nav-link {
+    color: $color-white;
+
+    &:hover {
+        color: $color-yellow;
+    }
 }
 
 .back-to-mp {
