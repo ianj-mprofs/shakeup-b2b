@@ -1,3 +1,4 @@
+// ***Used to animate while scrolling***
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
@@ -25,3 +26,17 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 });
+
+
+// ***Used to change text on hover***
+var originalText;
+
+$('.activity').hover(
+    function() {
+        originalText = $(this).find('h3').text();
+        $(this).find('h3').text('Coming Soon');
+    },
+    function() {
+        $(this).find('h3').text(originalText);
+    }
+);

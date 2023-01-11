@@ -257,7 +257,7 @@ footer nav a:hover {
   color: #ffffff;
 }
 
-#terms-conditions, #faq {
+#terms-conditions, #faq, #workshops {
   position: relative;
   top: -5vh;
 }
@@ -379,6 +379,10 @@ a.card-text {
 }
 a.card-text:hover {
   color: #d61c5b;
+}
+
+.accordion-item {
+  border-color: #ffffff;
 }
 
 @media only screen and (min-width: 1024px) {
