@@ -40,3 +40,14 @@ $('.activity').hover(
         $(this).find('h3').text(originalText);
     }
 );
+
+// ***Used to change text on mobile***
+$('.activity').on("touchstart",
+    function() {
+        originalText = $(this).find('h3').text();
+        $(this).find('h3').text('Coming Soon');
+    },
+    function() {
+        $(this).find('h3').text(originalText);
+    }
+);

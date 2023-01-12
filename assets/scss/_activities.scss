@@ -46,14 +46,14 @@
     .activity-img {
         background: linear-gradient(90deg, rgba(214, 28, 91, 0.8), rgba(214, 28, 91, 0.8)), url(../images/workshops-900x600.jpg);
         background-size: cover;
-        background-position: 70% 50%;
+        background-position: 0% 50%;
     }
 
     &:hover, &:active {
         .activity-img {
             background: url(../images/workshops-900x600.jpg);
             background-size: cover;
-            background-position: 70% 50%;
+            background-position: 0% 50%;
         }
 
         .activity-text-overlay {
