@@ -46,8 +46,7 @@ $('.activity').on("touchstart",
     function() {
         originalText = $(this).find('h3').text();
         $(this).find('h3').text('Coming Soon');
-    },
+    }).on("touchend", 
     function() {
         $(this).find('h3').text(originalText);
-    }
-);
+    });
