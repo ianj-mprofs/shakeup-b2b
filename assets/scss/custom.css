@@ -246,6 +246,16 @@ footer nav a:hover {
   color: #ffffff;
 }
 
+.btn-outline-white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.btn-outline-white:hover {
+  background-color: #f6eb12;
+  border-color: #f6eb12;
+  color: #270f42;
+}
+
 #terms-conditions, #faq, #workshops {
   position: relative;
   top: -5vh;

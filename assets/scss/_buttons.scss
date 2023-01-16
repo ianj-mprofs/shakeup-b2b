@@ -31,3 +31,14 @@
         color: $color-white;
     }
 }
+
+.btn-outline-white {
+    border-color: $color-white;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-yellow;
+        border-color: $color-yellow;
+        color: $color-dark-purple;
+    }
+}
