@@ -31,7 +31,17 @@ sliders.forEach(slider => {
 // ***Used to change text on hover***
 var originalText;
 
-$('.activity').hover(
+$('.activity').first().hover(
+    function() {
+        originalText = $(this).find('h3').text();
+        $(this).find('h3').text('Coming Soon');
+    },
+    function() {
+        $(this).find('h3').text(originalText);
+    }
+);
+
+$('.activity').last().hover(
     function() {
         originalText = $(this).find('h3').text();
         $(this).find('h3').text('Coming Soon');
@@ -42,7 +52,16 @@ $('.activity').hover(
 );
 
 // ***Used to change text on mobile***
-$('.activity').on("touchstart",
+$('.activity').first().on("touchstart",
+    function() {
+        originalText = $(this).find('h3').text();
+        $(this).find('h3').text('Coming Soon');
+    }).on("touchend", 
+    function() {
+        $(this).find('h3').text(originalText);
+    });
+
+$('.activity').last().on("touchstart",
     function() {
         originalText = $(this).find('h3').text();
         $(this).find('h3').text('Coming Soon');
